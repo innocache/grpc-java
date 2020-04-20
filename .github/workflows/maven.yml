@@ -23,4 +23,6 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Publish package
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: mvn deploy -Dregistry=https://maven.pkg.github.com/innocache -Dtoken=GITHUB_TOKEN
