@@ -114,4 +114,11 @@
       </plugins>
     </pluginManagement>
   </build>
+  <distributionManagement>
+   <repository>
+     <id>github</id>
+     <name>grpc-java</name>
+     <url>https://maven.pkg.github.com/innocache/grpc-java</url>
+   </repository>
+</distributionManagement>
 </project>
